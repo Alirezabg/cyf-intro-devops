@@ -25,7 +25,9 @@ To avoid wait times, IT teams use CI/CD pipelines and other automation to move c
 3. Let's go to Netlify.com and register or login via github.com (it will ask to grant permissions).
 4. I will use following [github action](https://github.com/marketplace/actions/netlify-actions) to make a deployment.
 5. Let's have a look into [.github/workflows/deployment.yaml](.github/workflows/deployment.yaml) file.
-   5.1. There are few sections: dependencies, build, and deploy.
+6. There are few sections: dependencies, build, and deploy.
+7. Let's discover Netlify logs and see the demo in here: https://andrewred.netlify.app/
+8. Yay! 🎉 It works!
 
 ??? If enough time
 
