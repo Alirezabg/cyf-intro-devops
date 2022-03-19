@@ -9,21 +9,21 @@ jobs:
       - name: Checkout our application code
         uses: actions/checkout@v2
 
-      - name: Dependencies
+      - name: Install application dependencies
         run: |
           npm install
 
-      #      # for safety use tests before making a deployment
+      #      # for safety - use tests before making a deployment
       #      - name: Test
       #        run: |
       #          npm run test
 
-      # this command will build application files into ./build folder
+      # This command will build application files into ./build folder
       - name: Build our application
         run: |
           npm run build
 
-      # Using existing github action to perform our deployment -> find more at: https://github.com/marketplace
+      # Using existing github action to create a deployment to Netlify -> find more at: https://github.com/marketplace
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
