@@ -13,11 +13,11 @@ jobs:
         run: |
           npm install
 
-      #      # for safety - use tests before making a deployment
-      #      - name: Test
-      #        run: |
-      #          npm run test
 
+        #  - name: Test
+        #    run: |
+        #      npm run test
+      #      # for safety - use tests before making a deployment
       # This command will build application files into ./build folder
       - name: Build our application
         run: |
